@@ -1,0 +1,48 @@
+- flex wrap : wrap; --> ~ word wrap, it makes items to come in next line 
+- span tag ??
+- display: inline-block;  --> to reduce padding 
+
+- background-image: url('img/banner/b2.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+
+- button.normal : new way for class 
+- does image always take whole space given in div 
+- what is flex-basis 
+- z-index : 
+- active class 
+- what happens by default if you put an image inside a div, smaller or bigger 
+- text property page : line height etc.
+using , in css classes 
+- border-collapse: collapse;
+- inheritance in css 
+
+
+
+
+
+
+<?php 
+            include("db.php");
+            session_start();
+            if (!isset($_SESSION['email'])){
+                echo "<div id='signUp'>
+                    <a href='#'><button class='normal'>Sign Up</button></a>        
+                    <a href='login.php'><button class='normal'>Login</button></a>
+                </div>";
+            }
+            else {
+                echo "
+                    <div id='signedUp'>
+                        <i id='u-icon' class='fa-solid fa-user'></i>
+                    </div>
+                ";
+            }
+        ?>
+
+
+- * {
+    
+}
